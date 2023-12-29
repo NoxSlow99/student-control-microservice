@@ -7,4 +7,4 @@ VALUES ("Alexis", "Hernandez", 22, 1, 1, 3);
 INSERT INTO students (nombre, apellidos, edad, carrera_id, div_carrera_id, campus_id)
 VALUES ("Pepito", "Fernandez", 18, 1, 1, 2);
 INSERT INTO students (nombre, apellidos, edad, carrera_id, div_carrera_id, campus_id)
-VALUES ("Juan", "Hernandez", 22, 2, 4, 1);
+VALUES ("Juan", "Hernandez", 22, 2, 3, 1);

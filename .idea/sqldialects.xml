@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/ControlStudents/microservice-campus/src/main/resources/db/migration/V1__create-table-campus.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/ControlStudents/microservice-campus/src/main/resources/db/migration/V2__test-data.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/ControlStudents/microservice-carrera/src/main/resources/db/migration/V1__create-table-carreras.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/ControlStudents/microservice-carrera/src/main/resources/db/migration/V2__data-prueba.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/ControlStudents/microservice-division/src/main/resources/db/migration/V1__create-table-divisiones.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/ControlStudents/microservice-division/src/main/resources/db/migration/V2__test-data.sql" dialect="MySQL" />
+  </component>
+</project>
