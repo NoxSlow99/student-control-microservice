@@ -11,13 +11,13 @@
         <module name="microservice-carrera" />
         <module name="microservice-student" />
         <module name="microservice-config" />
+        <module name="microservice-division" />
+        <module name="microservice-campus" />
         <module name="microservice-eureka" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="microservice-campus" target="21" />
       <module name="microservice-div_carrera" target="21" />
-      <module name="microservice-division" target="21" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

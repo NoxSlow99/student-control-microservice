@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class CarreraServiceImpl  implements ICarreraService{
+public class CarreraServiceImpl  implements ICarreraService {
 
     @Autowired
     private CarreraRepository carreraRepository;
@@ -32,6 +32,16 @@ public class CarreraServiceImpl  implements ICarreraService{
     @Override
     public void save(Carrera carrera) {
         carreraRepository.save(carrera);
+    }
+
+    @Override
+    public List<String> findAllByIdCampus(Long idCampus) {
+        return carreraRepository.findAllByCampusId(idCampus);
+    }
+
+    @Override
+    public List<String> findNameByDivision(Long idDiv) {
+        return carreraRepository.findNameByDivision(idDiv);
     }
 
     @Override

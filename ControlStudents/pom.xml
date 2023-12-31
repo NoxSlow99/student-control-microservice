@@ -24,6 +24,8 @@
     <module>microservice-config</module>
     <module>microservice-student</module>
     <module>microservice-carrera</module>
+    <module>microservice-campus</module>
+    <module>microservice-division</module>
   </modules>
 
   <properties>

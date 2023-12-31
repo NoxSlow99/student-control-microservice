@@ -29,8 +29,20 @@ public class CarreraController {
         return ResponseEntity.ok(carreraService.findById(id));
     }
 
+    // * Consumiendo otros microservicios (Carrera -> API)
     @GetMapping("/search-students/{idCarrera}")
     public ResponseEntity<?> findStudentsByIdCarrera(@PathVariable Long idCarrera){
         return ResponseEntity.ok(carreraService.findStudentsByIdCarrera(idCarrera));
+    }
+
+    // * EndPoints que lo consuman otras API'S (API -> Carrera)
+    @GetMapping("/search-by-campus/{idCampus}")
+    public ResponseEntity<?> findAllByIdCampus(@PathVariable Long idCampus) {
+        return ResponseEntity.ok(carreraService.findAllByIdCampus(idCampus));
+    }
+
+    @GetMapping("/search-division/{idDiv}")
+    public ResponseEntity<?> findNameByDivision(@PathVariable Long idDiv) {
+        return ResponseEntity.ok(carreraService.findNameByDivision(idDiv));
     }
 }
