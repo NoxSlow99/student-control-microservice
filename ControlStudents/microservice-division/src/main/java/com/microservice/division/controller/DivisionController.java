@@ -29,7 +29,7 @@ public class DivisionController {
         return ResponseEntity.ok(divisionService.findById(id));
     }
 
-    // * EndPoints para consumir otros microservicios (Division -> API)
+    // ? EndPoints para consumir otros microservicios (Division -> API)
     @GetMapping("/search-carreras/{idDivision}")
     public ResponseEntity<?> findCarrerasByDivision (@PathVariable Long idDivision) {
         return ResponseEntity.ok(divisionService.findCarrerasByDivision(idDivision));
@@ -40,7 +40,7 @@ public class DivisionController {
         return ResponseEntity.ok(divisionService.findStudentsByDivision(idDivision));
     }
 
-    // * EndPoints para que otros microservicios puedan usar el microservicio Division (API -> Division)
+    // ? EndPoints para que otros microservicios puedan usar el microservicio Division (API -> Division)
     @GetMapping("/search-name/{idCampus}")
     public ResponseEntity<?> findNameByCampus(@PathVariable Long idCampus) {
         return ResponseEntity.ok(divisionService.findNameByCampus(idCampus));

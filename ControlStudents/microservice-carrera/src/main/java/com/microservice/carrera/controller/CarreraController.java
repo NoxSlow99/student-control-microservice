@@ -29,13 +29,13 @@ public class CarreraController {
         return ResponseEntity.ok(carreraService.findById(id));
     }
 
-    // * Consumiendo otros microservicios (Carrera -> API)
+    // ? Consumiendo otros microservicios (Carrera -> API)
     @GetMapping("/search-students/{idCarrera}")
     public ResponseEntity<?> findStudentsByIdCarrera(@PathVariable Long idCarrera){
         return ResponseEntity.ok(carreraService.findStudentsByIdCarrera(idCarrera));
     }
 
-    // * EndPoints que lo consuman otras API'S (API -> Carrera)
+    // ? EndPoints que lo consuman otras API'S (API -> Carrera)
     @GetMapping("/search-by-campus/{idCampus}")
     public ResponseEntity<?> findAllByIdCampus(@PathVariable Long idCampus) {
         return ResponseEntity.ok(carreraService.findAllByIdCampus(idCampus));

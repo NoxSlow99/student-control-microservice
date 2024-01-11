@@ -30,7 +30,7 @@ public class CampusController {
         return ResponseEntity.ok(campusService.findById(id));
     }
 
-    // * Métodos para hacer peticiones a otras API'S (Campus -> API)
+    // ? Métodos para hacer peticiones a otras API'S (Campus -> API)
     @GetMapping("/search-students/{idCampus}")
     public ResponseEntity<?> findStudentsByIdCampus(@PathVariable Long idCampus){
         return ResponseEntity.ok(campusService.findStudentsByIdCampus(idCampus));

@@ -30,19 +30,17 @@ public class StudentController {
         return ResponseEntity.ok(studentService.findById(id));
     }
 
-    // * Configurando EndPoint para que pueda consumir el microservicio de carrera
+    // ? Configurando EndPoint para que otros microservicios puedan consumir el microservicio de "Student"
     @GetMapping("/search-by-carrera/{idCarrera}")
     public ResponseEntity<?> findByCarrera(@PathVariable Long idCarrera) {
         return ResponseEntity.ok(studentService.findByIdCarrera(idCarrera));
     }
 
-    // * Configurando EndPoint para que pueda consumir el microservicio de campus
     @GetMapping("/search-by-campus/{idCampus}")
     public ResponseEntity<?> findByCampus(@PathVariable Long idCampus) {
         return ResponseEntity.ok(studentService.findByIdCampus(idCampus));
     }
 
-    // * Configurando EndPoint para que pueda consumir el microservicio de division
     @GetMapping("/search-by-division/{idDivCarrera}")
     public ResponseEntity<?> findByDivCarrera(@PathVariable Long idDivCarrera) {
         return ResponseEntity.ok(studentService.findByIdDivCarrera(idDivCarrera));
